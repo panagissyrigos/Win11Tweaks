@@ -23,3 +23,10 @@
     called DLL Hell) tends to get pretty huge the more applications you install. This handly little command
     can do some much needed cleaning. Use at your own risk. It works for me, but I am religiously careful
     when it comes to installing things on my computers and servers. 
+
+* Enable/Install Hyper-V and the ability to run any OS in the hypervisor (requires admin rights)
+
+    Run this batch file to install all the necessary components to run Hyper-V on your Windows 11 computer.
+    It works even in Windows 11 Home edition. (Requires virtualization to be enabled in your BIOS/UEFI and 
+    a restart)
+
