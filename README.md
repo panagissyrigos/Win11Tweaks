@@ -16,6 +16,8 @@
     Did you ever want to differentiate a command line that runs under Administrator privileges beyond just
     the word "Administrator" on the window title? Well now you can. How about a blood red background color
     with white letters? This has been working for a very long time. I remember using it on Windows 7.
+    
+    (2023 update) If you're using PlatformIO, it will start failing because this 'hack' is setting the errorlevel to 1. 
 
 * Cleanup WinSxS (requires admin rights)
 
@@ -30,3 +32,11 @@
     It works even in Windows 11 Home edition. (Requires virtualization to be enabled in your BIOS/UEFI and 
     a restart)
 
+* For when Edge doesn't close even if you have turned off background processes and disabled Startup Boost
+
+    There is a group policy setting that controls whether Edge can close all its background processes once
+    all the windows are closed. One might think that turning off the background processes and disabling
+    startup boost would be enough, but apparently it's not. This is something that has been bothering me
+    for a long time, and finally found an answer. You can set this with a GPO if you have the appropriate
+    environment, or you can use the included batch file to set the appropriate registry setting that 
+    corresponds with the GPO setting.
