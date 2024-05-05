@@ -40,3 +40,5 @@
     for a long time, and finally found an answer. You can set this with a GPO if you have the appropriate
     environment, or you can use the included batch file to set the appropriate registry setting that 
     corresponds with the GPO setting.
+
+    This setting will effectively disable Microsoft Copilot. 
