@@ -42,3 +42,16 @@
     corresponds with the GPO setting.
 
     This setting will effectively disable Microsoft Copilot. 
+
+* Check if a specific machine is affected by the vulnerability named PKFail that was [disclosed](https://arstechnica.com/security/2024/07/secure-boot-is-completely-compromised-on-200-models-from-5-big-device-makers/) on 7/25/2024
+
+    The script requires admin privileges to run and will display a string with the computer name and whether the 
+    computer it was executed on is vulnerable (meaning, it contains the leaked private key that could compromise 
+    Secureboot on the device).
+
+    *Example.*
+    PS C:\> .\PKFailCheck.ps1
+    DESKTOP1 False
+
+    PS C:\> .\PKFailCheck.ps1
+    DESKTOP2 True
