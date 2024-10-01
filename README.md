@@ -58,3 +58,14 @@
     PS C:\> .\PKFailCheck.ps1
     
     DESKTOP2 True
+
+* Disable Zoom Update task after running a winget upgrade
+    Zoom likes to install a scheduled task after the full installer is run from winget. The concept of keeping the 
+    software up-to-date is valiant, but the Zoom updater causes the computer to boot slowly, login slowly, and the 
+    repetition setup by the task tends to interfere with every day-to-day work that requires all of the user's CPU.
+    If you're a systems administrator that depends on winget to update/upgrade software on your users' computers,
+    this automated updater can be a pain and could even cause incompatibility issues (we've seen this on other pieces 
+    of software, haven't we?)
+
+    Personally, I have added the script here at the end of the script I run after hours to update/upgrade software
+    using winget.
